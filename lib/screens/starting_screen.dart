@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:only_me/Screens/login/login_signup_screen.dart';
 
 class LoginStartScreen extends StatelessWidget {
   const LoginStartScreen({Key? key}) : super(key: key);
@@ -65,7 +66,7 @@ class LoginStartScreen extends StatelessWidget {
           ),
           SizedBox(height: 12), // Adding space between the texts
           Text(
-            'This is YOUR app to Sell Yourself and Your Services.',
+            'This is YOUR app to Sell Yourself and Buy Services.',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Color.fromRGBO(67, 101, 142, 1),
@@ -111,6 +112,7 @@ class LoginStartScreen extends StatelessWidget {
 
   void _navigateToCreateAccount(BuildContext context) {
     // TODO: Add navigation logic to redirect to the create account screen
-    // Navigator.of(context).push(MaterialPageRoute(builder: (context) => CreateAccountScreen()));
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => LoginSignupScreen()));
   }
 }
