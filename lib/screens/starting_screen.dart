@@ -21,15 +21,15 @@ class LoginStartScreen extends StatelessWidget {
                           0.05), // Providing some top space
                   getImageAsset(
                       './assets/images/narcissism2.png'), // Icon placeholder on top
-                  SizedBox(
+                  const SizedBox(
                       height:
                           30), // Adding space between the icon and the title
                   _titleDescription(),
-                  SizedBox(
+                  const SizedBox(
                       height:
                           20), // Adding space between the title and the description
                   _startingWelcomeDescription(),
-                  SizedBox(
+                  const SizedBox(
                       height: 40), // Adding space before the Get Started button
                   _getStartedButton(context), // Get Started button
                 ],
@@ -37,24 +37,23 @@ class LoginStartScreen extends StatelessWidget {
             ),
           ),
         ),
-        backgroundColor: Color.fromRGBO(218, 195, 123, 1));
+        backgroundColor: const Color.fromRGBO(218, 195, 123, 1));
   }
 
   //Public methods
   Widget getImageAsset(String path) {
     return Container(
       margin: const EdgeInsets.all(5.0),
-      child: Image.asset(path),
       width: 150,
+      child: Image.asset(path),
     );
   }
 
   Widget _startingWelcomeDescription() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: 24.0), // Add horizontal padding
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24.0), // Add horizontal padding
       child: Column(
-        children: const <Widget>[
+        children: <Widget>[
           Text(
             'Welcome, Solopreneur! ',
             style: TextStyle(
@@ -98,7 +97,6 @@ class LoginStartScreen extends StatelessWidget {
   Widget _getStartedButton(BuildContext context) {
     return ElevatedButton(
       onPressed: () => _navigateToCreateAccount(context),
-      child: const Text('Get Started'),
       style: ElevatedButton.styleFrom(
         backgroundColor: Color.fromRGBO(159, 107, 157, 1),
         padding: const EdgeInsets.symmetric(
@@ -107,6 +105,7 @@ class LoginStartScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(30.0), // Rounded corners
         ),
       ),
+      child: const Text('Get Started'),
     );
   }
 
