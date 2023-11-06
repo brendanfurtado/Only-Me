@@ -2,7 +2,7 @@
 
 An app that will bolster you solopreneur journey.
 
-<img width="100" alt="Screenshot 2023-11-05 at 9 49 48 PM" src="https://github.com/brendanfurtado/Only-Me/assets/43616587/b4b8f423-e2a0-4ab0-a8b8-d4d475b29cfc">
+<img width="200" alt="Screenshot 2023-11-05 at 9 49 48 PM" src="https://github.com/brendanfurtado/Only-Me/assets/43616587/b4b8f423-e2a0-4ab0-a8b8-d4d475b29cfc">
 
 
 ## Getting Started
